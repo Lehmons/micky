@@ -1,0 +1,59 @@
+* {
+  border: 0;
+  margin: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "Franklin Gothic Condensed";
+  src: url("../fonts/franklin-gothic-condensed.woff2") format("woff2"),
+    url("../fonts/franklin-gothic-condensed.woff") format("woff");
+}
+
+body {
+  padding: 20px;
+  background: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 20px;
+}
+
+h1 {
+  font-weight: normal;
+}
+
+h1,
+p,
+a {
+  font-family: "Franklin Gothic Condensed";
+  font-size: 41px;
+  text-transform: uppercase;
+  line-height: 1.35;
+  color: black;
+}
+
+p {
+  max-width: 1220px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* vanilla mobile styling (no sass) */
+
+@media (max-width: 768px) {
+  h1,
+  p,
+  a {
+    font-size: 31px;
+  }
+}
